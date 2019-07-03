@@ -68,6 +68,19 @@ public class Example {
         );
     }
 
+    @Test
+    public void ex2FindSearch(){
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "not find Search Box",
+                15
+        );
+        waitForElementPresents(
+                By.xpath("//*[contains(@text, 'Search…')]"),
+                "Cannot find Search input",
+                15);
+    }
+
     private WebElement waitForElementPresents(By by, String error_massage, long timeoutSeconds)
     {
         WebDriverWait wait = new WebDriverWait(driver,timeoutSeconds);

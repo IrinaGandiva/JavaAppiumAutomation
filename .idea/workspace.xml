@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b56d8e9-5b25-4a46-a2af-7e1260251b75" name="Default Changelist" comment="" />
+    <list default="true" id="6b56d8e9-5b25-4a46-a2af-7e1260251b75" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Example.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +16,26 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Example.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="78" column="53" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="50" column="19" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="50" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -23,7 +45,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Example" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -44,12 +66,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -67,12 +105,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Example.exampleTestId">
+  <component name="RunManager" selected="JUnit.Example">
     <configuration name="Example" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Example" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Example.ex2FindSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Example" />
+      <option name="METHOD_NAME" value="ex2FindSearch" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,23 +155,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testCancelSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testCancelSearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Example" />
+        <item itemvalue="JUnit.Example.ex2FindSearch" />
         <item itemvalue="JUnit.Example.exampleTestId" />
         <item itemvalue="JUnit.Example.exampleTestXpath" />
         <item itemvalue="JUnit.Example.exampleTest" />
-        <item itemvalue="JUnit.FirstTest.testCancelSearch" />
-        <item itemvalue="JUnit.Example" />
       </list>
     </recent_temporary>
   </component>
@@ -141,15 +179,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Example_exampleTest - 2019.07.02 at 17h 15m 16s.xml">
-      <configuration name="Example.exampleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Example_exampleTest - 2019.07.02 at 17h 21m 24s.xml">
-      <configuration name="Example.exampleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testCancelSearch - 2019.07.02 at 17h 50m 01s.xml">
-      <configuration name="FirstTest.testCancelSearch" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Example_exampleTest - 2019.07.02 at 17h 53m 51s.xml">
       <configuration name="Example.exampleTest" configurationId="JUnit" />
     </history-entry>
@@ -171,11 +200,21 @@
     <history-entry file="Example_exampleTestId - 2019.07.02 at 18h 38m 01s.xml">
       <configuration name="Example.exampleTestId" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Example_exampleTestId - 2019.07.02 at 19h 25m 33s.xml">
+      <configuration name="Example.exampleTestId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Example_exampleTestXpath - 2019.07.03 at 10h 46m 55s.xml">
+      <configuration name="Example.exampleTestXpath" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Example_exampleTestId - 2019.07.03 at 10h 47m 21s.xml">
+      <configuration name="Example.exampleTestId" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="50" width="1260" height="669" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25779969" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26190478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -184,7 +223,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41594455" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41594455" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -204,8 +243,20 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/FirstTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/Example.java" />
+    <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="50" column="19" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="50" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="78" column="53" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
