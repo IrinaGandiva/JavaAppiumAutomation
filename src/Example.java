@@ -11,6 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.net.URL;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
@@ -213,7 +214,7 @@ public class Example {
         Thread.sleep(2000);
 
         waitForElementAndClick(
-                By.xpath("//android.widget.TextView[contains(@text, '"+ name_of_the_folder + "')]"),
+                By.xpath("//android.widget.TextView[contains(@text, '" + name_of_the_folder + "')]"),
                 "cannot find folder" + name_of_the_folder,
                 5
         );
@@ -236,7 +237,7 @@ public class Example {
         );
 
         swipeElementToLeft(
-                By.xpath("//*[@text= '"+ name_of_the_second_request +"']"),
+                By.xpath("//*[@text= '" + name_of_the_second_request + "']"),
                 "Cannot find saved article " + name_of_the_second_request
         );
         waitForElementPresents(
@@ -244,52 +245,39 @@ public class Example {
                 "delete saved article" + name_of_the_first_request,
                 5
         );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
+
+    @Test
+    public void ex6AssertTitle(){
+
+
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "Cannot find Search Wikipedia input",
+                5
+        );
+
+        String name_of_the_request = "Leonardo da Vinci";
+
+        waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text, 'Search…')]"),
+                name_of_the_request,
+                "Cannot find search input",
+                5
+        );
+
+        waitForElementAndClick(
+                By.xpath("//android.widget.TextView[contains(@text, 'Italian Renaissance polymath')]"),
+                "Cannot find Search Wikipedia input",
+                5
+        );
+
+        assertElementPresent(
+                By.id("org.wikipedia:id/view_page_title_text"),
+                "there is no such element"
+        );
+        }
+
 
     private WebElement waitForElementPresents(By by, String error_massage, long timeoutSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, timeoutSeconds);
@@ -352,12 +340,19 @@ public class Example {
 
     }
 
+    private int getAmountOfElements(By by)
+    {
+        List elements = driver.findElements(by);
+        return elements.size();
+    }
 
+    private void assertElementPresent(By by, String error_message)
+    {
+       int amount_of_elements = getAmountOfElements(by);
+       if (amount_of_elements >= 1){
+           String default_message = "An element " + by.toString() + "supposed to be present ";
+           throw new AssertionError(default_message + " " + error_message);
 
-
-
-
-
-
-
+       }
+    }
 }
