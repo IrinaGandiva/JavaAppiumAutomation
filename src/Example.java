@@ -229,6 +229,35 @@ public class Example extends CoreTestCase {
                 5
         );
     }
+    @Test
+    public void testEx6AssertTitle() {
+
+
+        MainPageObject.waitForElementAndClick(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "Cannot find Search Wikipedia input",
+                5
+        );
+
+        String name_of_the_request = "Leonardo da Vinci";
+
+        MainPageObject.waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text, 'Search…')]"),
+                name_of_the_request,
+                "Cannot find search input",
+                5
+        );
+
+        MainPageObject.waitForElementAndClick(
+                By.xpath("//android.widget.TextView[contains(@text, 'Italian Renaissance polymath')]"),
+                "Cannot find Search Wikipedia input",
+                5
+        );
+        String xpath_of_element = "//*[@resource-id='org.wikipedia:id/view_page_header_container']/*[@resource-id='org.wikipedia:id/view_page_title_text']";
+
+        MainPageObject.assertElementPresent(By.xpath(xpath_of_element),"no such elements");
+
+    }
 
 }
 

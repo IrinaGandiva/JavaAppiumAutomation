@@ -132,5 +132,10 @@ public class MainPageObject {
 
     }
 
+    public void assertElementPresent(By by, String error_message) {
+        int amount_of_title = getAmountOfElements(by);
 
+        Assert.assertTrue(error_message, amount_of_title < 1);
+
+    }
 }
