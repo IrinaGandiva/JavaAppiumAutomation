@@ -78,13 +78,17 @@ public class MainPageObject {
         swipeUp(200);
     }
 
-    public void swipeUpToFindElement(By by, String error_massage)
+    public void swipeUpToFindElement(By by, String error_massage, int max_swipes)
     {
-        driver.findElements(by);
-        driver.findElements(by).size();
+        int already_swiped = 0;
 
         while (driver.findElements(by).size() == 0){
+            if (already_swiped > max_swipes){
+                waitForElementPresents(by, "Can not find element by swiping up.\n" + error_massage, 0);
+            return;
+            }
             swipeUpQuick();
+            ++already_swiped;
         }
     }
     public void swipeElementToLeft(By by, String error_message) {
@@ -133,9 +137,10 @@ public class MainPageObject {
     }
 
     public void assertElementPresent(By by, String error_message) {
+
         int amount_of_title = getAmountOfElements(by);
 
-        Assert.assertTrue(error_message, amount_of_title < 1);
+        Assert.assertTrue(error_message, amount_of_title > 0);
 
     }
 }
