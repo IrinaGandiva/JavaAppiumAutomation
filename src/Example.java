@@ -15,12 +15,12 @@ public class Example extends CoreTestCase {
     @Test
     public void testEx2FindSearch() {
         MainPageObject.waitForElementAndClick(
-                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "xpath://*[contains(@text, 'Search Wikipedia')]",
                 "not find Search Box",
                 15
         );
         MainPageObject.waitForElementPresents(
-                By.xpath("//*[contains(@text, 'Search…')]"),
+                "xpath://*[contains(@text, 'Search…')]",
                 "Cannot find Search input",
                 15);
 
